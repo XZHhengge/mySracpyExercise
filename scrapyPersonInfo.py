@@ -5,8 +5,6 @@ import json
 from bs4 import  BeautifulSoup
 
 #修改为自己的学号和密码
-# username = "17034480137"
-# password = "159874xzh"
 username = input('请输入学号: ')
 password = input('请输入密码: ')
 date = input('请输入你要查看课表的周数')
