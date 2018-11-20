@@ -1,5 +1,4 @@
-#-*- coding:utf-8 -*-
-# 导入pymysql模块
+# -*- coding: utf-8 -*-
 import pymysql
 
 
@@ -14,7 +13,7 @@ class Sql_operation(object):
         # 实例变量
         self.mydb = mydb
         # 打开数据库连接
-        self.db = pymysql.connect(host="localhost", user="root", password="", db=self.mydb, charset="utf8")
+        self.db = pymysql.connect(host="localhost", user="root", password="159874xzh", db=self.mydb, charset="utf8")
         # 创建游标对象
         self.cursor = self.db.cursor()
 
