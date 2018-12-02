@@ -1,4 +1,3 @@
-import json
 import requests
 from bs4 import BeautifulSoup
 def get_info(info):
@@ -24,9 +23,7 @@ def get_info(info):
         for i in info:
             print(i.parent.previous_element.previous_element + i.getText())
         x = requests.get('http://210.38.250.43/xsgrkbcx!getKbRq.action?xnxqdm={}&zc={}'.format(term, week), cookies=cookies)
-        text = x.text
-
-        text = json.loads(text)
+        text = x.json()
         text = text[0]
         text1 = [text[i]['kcmc'] for i in range(len(text))]  #课名
         text2 = [text[i]['teaxms'] for i in range(len(text))] #老师
@@ -47,7 +44,7 @@ def get_info(info):
 
 if __name__ == '__main__':
     info = []
-    info.append(input('请输入你的账号:'))
+    info.append(input('请输入你的学号:'))
     info.append(input('请输入你的密码：'))
     info.append(input('你需要第几周的课表：'))
     info.append(input('需要查询的学期（默认为本学期）格式:(201801)代表18年第一个学期:'))
