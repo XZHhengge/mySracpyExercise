@@ -2,7 +2,8 @@
 import urllib.request
 import http.cookiejar
 import json
-from bs4 import  BeautifulSoup
+from bs4 import BeautifulSoup
+'''使用urllib和http爬去广东石油化工学院的个人信息'''
 
 #修改为自己的学号和密码
 username = input('请输入学号: ')

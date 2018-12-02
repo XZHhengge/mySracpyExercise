@@ -1,5 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+'''使用requests和BeautifulSoup爬去广东石油化工学院的个人信息与课表'''
+
+
 def get_info(info):
     account = info[0]
     pwd = info[1]
