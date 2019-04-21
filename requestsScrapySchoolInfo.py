@@ -50,5 +50,5 @@ if __name__ == '__main__':
     info.append(input('请输入你的学号:'))
     info.append(input('请输入你的密码：'))
     info.append(input('你需要第几周的课表：'))
-    info.append(input('需要查询的学期（默认为本学期）格式:(201801)代表18年第一个学期:'))
+    info.append(input('需要查询的学期（默认为201801学期）格式:(201801)代表18年第一个学期:'))
     get_info(info)

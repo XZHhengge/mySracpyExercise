@@ -51,8 +51,10 @@ def main(start):
 
 if __name__ == '__main__':
     startTime = time()
+    # 不是用多线程
     # for i in range(10):
     #     main(i*25)
+    # 第一种多线程写法
     # pool = multiprocessing.Pool(multiprocessing.cpu_count())
     # for i in range(10):
     #     pool.apply_async(main, (i*25,))

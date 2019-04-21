@@ -130,8 +130,8 @@ def scarpy_web(url, web_name):
 
 if __name__ == '__main__':
     # url = input('输入你想要爬取的网页:')
-    url = 'https://www.missionbicycle.com/'
-    web_name = 'missionbicycle'
+    url = 'https://www.jianshu.com/p/ce8cc64c091a'
+    web_name = '简书'
     scarpy_web(url=url, web_name=web_name)
 
 
